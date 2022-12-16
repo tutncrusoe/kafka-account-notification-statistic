@@ -17,7 +17,7 @@ import java.util.Date;
 public class AccountController {
 
     @Autowired
-    KafkaTemplate<String, Object> kafkaTemplate;
+    KafkaTemplate<String, Object> kafkaTemplate; // Object: JSON serialization
 
     @PostMapping("/new")
     public AccountDTO create(@RequestBody AccountDTO accountDTO) {
