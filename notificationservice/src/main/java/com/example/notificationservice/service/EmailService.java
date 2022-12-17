@@ -55,7 +55,7 @@ class EmailServiceImpl implements EmailService {
             helper.setFrom(from);
             javaMailSender.send(message);
 
-            logger.info("END... Email sent success");
+            logger.info("END... Email sent successfully!");
         } catch (MessagingException e) {
             logger.error("Email sent with error: " + e.getMessage());
         }

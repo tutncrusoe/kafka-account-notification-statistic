@@ -18,7 +18,4 @@ public class NotificationServiceApplication {
 	JsonMessageConverter converter() {
 		return new JsonMessageConverter();
 	}
-
-
-
 }
